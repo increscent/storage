@@ -21,7 +21,7 @@ db.query(db.expr('INSERT INTO table1 (column1, column2) VALUES (1, ?)', 'incresc
     data => console.log(data)
 );
 
-db.query(db.expr('SELECT * FROM table1'),
+db.query('SELECT * FROM table1',
     err => console.log(err),
     data => console.log(data)
 );
