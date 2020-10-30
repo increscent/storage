@@ -20,4 +20,9 @@ db.query(db.expr('INSERT INTO table1 (NAME) VALUES (?)', 'increscent'),
     err => console.log(err),
     data => console.log(data)
 );
+
+db.query(db.expr('SELECT * FROM table1'),
+    err => console.log(err),
+    data => console.log(data)
+);
 ```
