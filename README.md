@@ -16,7 +16,7 @@ To use the `sqlite.js` module, write:
 let sqlite = require('./sqlite.js');
 let db = sqlite.connect('./sqlite', './db.sqlite');
 
-db.query(db.expr('INSERT INTO table1 (NAME) VALUES (?)', 'increscent'),
+db.query(db.expr('INSERT INTO table1 (column1, column2) VALUES (1, ?)', 'increscent'),
     err => console.log(err),
     data => console.log(data)
 );
